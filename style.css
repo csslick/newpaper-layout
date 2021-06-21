@@ -33,9 +33,10 @@ body {
   position: relative;
   width: 1400px;
   margin: 0 auto;
-  background: #ccc;
+  background: #fff;
   height: 200px;
   padding-top: 35px;
+  margin-top: 100px;
 }
 
 #main_header > .barcode {
@@ -63,6 +64,7 @@ body {
   line-height: 76px;
   margin-bottom: 0.5rem; /* 기본 글자 1칸 크기 */
 }
+
 .header_group {
 
 }
@@ -77,4 +79,42 @@ body {
 }
 .date {
   letter-spacing: 1.3px;
+}
+.day {
+  line-height: 2rem;
+  padding-top: 15px;
+}
+
+#gnb {
+  width: 1400px;
+  background: #fff;
+  margin: 0 auto;
+  border-top: 1px solid #000;
+  border-bottom: 3px solid #000;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#gnb ul {
+  overflow: hidden;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#gnb ul li {
+  float: left;
+  width: calc(100% / 5);
+  text-align: center;
+  border-left: 1px solid #000;
+}
+
+/* 마지막 li 우측에 선 추가 */
+#gnb ul li:last-child {
+  border-right: 1px solid #000;
+}
+
+#gnb ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 500;
+  font-size: 1.4rem;
 }
