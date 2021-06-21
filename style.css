@@ -2,8 +2,52 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
 }
 
 body {
   background-image: url(images/purty_wood.png);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+}
+
+.fw300 {
+  font-weight: 300;
+}
+.fw400 {
+  font-weight: 400;
+}
+.fw500 {
+  font-weight: 500;
+}
+.fw900 {
+  font-weight: 900;
+}
+
+#main_header {
+  position: relative;
+  width: 1400px;
+  margin: 0 auto;
+  background: #ccc;
+  height: 200px;
+}
+
+#main_header > .barcode {
+  position: absolute;
+  width: 200px;
+  left: 30px;
+  top: 50px;
+}
+#main_header > .header_group{
+  text-align: center;
+  outline: 1px solid red;
+}
+#main_header > .time{
+  position: absolute;
+  right: 30px;
+  top: 80px;
 }
