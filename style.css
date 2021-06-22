@@ -52,6 +52,10 @@ body {
   font-weight: 900;
 }
 
+article p {
+  line-height: 1.8;
+}
+
 #main_header {
   position: relative;
   width: 1400px;
@@ -82,7 +86,9 @@ body {
   font-size: 24px;
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
+  margin: 0;
 }
+
 .header_group > h1 {
   font-size: 76px;
   line-height: 76px;
@@ -101,12 +107,15 @@ body {
   font-size: 2em;
   text-align: right;
 }
+
+.day {
+  padding-top: 15px;
+  font-size: 30px;
+  margin: 0;
+}
 .date {
   letter-spacing: 1.3px;
-}
-.day {
-  line-height: 2rem;
-  padding-top: 15px;
+  font-size: 30px;
 }
 
 #gnb {
@@ -223,4 +232,43 @@ hr {
 .right-btn {
   right: 10px;
   top: 160px;
+}
+
+#sidebar .today {
+  border-bottom: 1px solid #000;
+  padding-bottom: 1em;
+}
+
+#sidebar > .today > a {
+  display: block;
+  overflow: hidden;
+}
+
+#sidebar > .today > a > img {
+  float: left;
+  margin-right: 1em;
+}
+#sidebar > .today > a > .info {
+  float: left;
+  padding-top: 1em;
+}
+#sidebar > .today > a > .info > p {
+  margin: 0;
+}
+#sidebar .info > p.name > span {
+  font-size: 1.2em;
+}
+
+#sidebar h4 {
+  margin-top: 10px;
+}
+
+.notice ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  color: red;
+}
+.notice ul li {
+  margin-bottom: 2px;
+  margin-top: 2px;
 }
