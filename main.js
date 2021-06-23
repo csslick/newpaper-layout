@@ -1,7 +1,4 @@
 // main.js
-$(function(){
-
-});
 
 // 굿사이트 정보 데이터
 var goodSiteInfo = [
@@ -32,12 +29,31 @@ function changeSiteInfo(num) {
   $('#sidebar > figure .url').text(goodSiteInfo[num].url);
   /* 제목 변경 */
   $('#sidebar > figure .home_title').text(goodSiteInfo[num].title);
+
+  // siteLink에 링크 url 추가(새창열기)
+
 }
 
 // 다음 사이트 정보
 function nextSiteInfo() {
+  // 다음 이미지 카운트
+  num = num + 1;
+  // 마지막 정보이면 처음으로
+  if(num > 2) {
+    num = 0;
+  }
+  console.log(num);
   changeSiteInfo(num);
-  console.log(111)
+}
+
+// 이전 사이트 정보
+function prevSiteInfo() {
+  num = num - 1;
+  if(num < 0) {
+    num = 2;
+  }
+  console.log(num);
+  changeSiteInfo(num);
 }
 
 
