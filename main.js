@@ -10,7 +10,7 @@ var goodSiteInfo = [
   {
     imgSrc: 'images/site2.png',
     url: 'https://newestamericans.com/',
-    title: '노스웨스트'
+    title: '노스웨스트 아메리칸즈'
   },
   {
     imgSrc: 'images/site3.gif',
@@ -20,6 +20,7 @@ var goodSiteInfo = [
 ];
 
 var num = 0; // 데이터 인덱스번호
+$('.siteLink').attr('href', goodSiteInfo[0].url); // 초기 url 값
 
 // 사이트 정보 변경 함수
 function changeSiteInfo(num) {
@@ -31,7 +32,7 @@ function changeSiteInfo(num) {
   $('#sidebar > figure .home_title').text(goodSiteInfo[num].title);
 
   // siteLink에 링크 url 추가(새창열기)
-
+  $('.siteLink').attr('href', goodSiteInfo[num].url);
 }
 
 // 다음 사이트 정보
